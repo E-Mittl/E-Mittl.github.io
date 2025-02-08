@@ -12,13 +12,13 @@
       
       
       
-        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/charts/">
+        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/Component%20Selection/">
       
       
-        <link rel="prev" href="../Component%20Selection/">
+        <link rel="prev" href="../Block%20Diagram/">
       
       
-        <link rel="next" href="../subfolder/">
+        <link rel="next" href="../charts/">
       
       
       <link rel="icon" href="../static/logo.png">
@@ -29,7 +29,7 @@
 
     
       
-        <title>Charts - E-Mittl EGR314</title>
+        <title>Component Selection - E-Mittl EGR314</title>
       
     
     
@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#rgb-sensor" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -123,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Charts
+              Component Selection
             
           </span>
         </div>
@@ -229,9 +234,11 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../Component%20Selection/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
     
@@ -246,11 +253,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../charts/" class="md-tabs__link">
         
   
     
@@ -374,25 +379,6 @@
       
   
   
-  
-    <li class="md-nav__item">
-      <a href="../Component%20Selection/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Component Selection
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -401,8 +387,30 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Component Selection
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../charts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -411,7 +419,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -476,6 +483,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -490,7 +499,7 @@
                   
 
   
-    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/charts.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/Component Selection.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -498,35 +507,84 @@
   
 
 
-  <h1>Charts</h1>
-
-<pre class="mermaid"><code>graph LR
-  A[Start] --&gt; B{Error?};
-  B --&gt;|Yes| C[Hmm...];
-  C --&gt; D[Debug];
-  D --&gt; B;
-  B ----&gt;|No| E[Yay!];</code></pre>
-<pre class="mermaid"><code>sequenceDiagram
-  autonumber
-  Alice-&gt;&gt;John: Hello John, how are you?
-  loop Healthcheck
-      John-&gt;&gt;John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts!
-  John--&gt;&gt;Alice: Great!
-  John-&gt;&gt;Bob: How about you?
-  Bob--&gt;&gt;John: Jolly good!</code></pre>
-<pre class="mermaid"><code>stateDiagram-v2
-  state fork_state &lt;&lt;fork&gt;&gt;
-    [*] --&gt; fork_state
-    fork_state --&gt; State2
-    fork_state --&gt; State3
-
-    state join_state &lt;&lt;join&gt;&gt;
-    State2 --&gt; join_state
-    State3 --&gt; join_state
-    join_state --&gt; State4
-    State4 --&gt; [*]</code></pre>
+<h1 id="rgb-sensor">RGB Sensor:</h1>
+<table>
+<thead>
+<tr>
+<th>Manufacturer</th>
+<th>Part Number</th>
+<th>Image</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Texas Instruments</td>
+<td><a href="https://www.digikey.com/en/products/detail/texas-instruments/OPT4060DTSR/22116843">OPT4060DTSR</a></td>
+<td><a class="glightbox" href="../Images/TI_OPT4060DTSR.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TI" src="../Images/TI_OPT4060DTSR.jpg" /></a></td>
+<td>- Configurable I2C Address <br> - Small form factor <br> - Low operating power</td>
+<td>- Complex configuration <br></td>
+</tr>
+<tr>
+<td>Vishay Semiconductor</td>
+<td><a href="https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/VEML3328/10673129">VEML3328</a></td>
+<td><a class="glightbox" href="../Images/VS_VEML3328.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="VS" src="../Images/VS_VEML3328.jpg" /></a></td>
+<td>- Simple configuration <br> - 4-Channels (RGBC) <br> - Integrated signal conditioning</td>
+<td>- Fixed I2C address</td>
+</tr>
+<tr>
+<td>ams-OSRAM USA INC.</td>
+<td><a href="https://www.digikey.com/en/products/detail/ams-osram-usa-inc/AS7341-DLGM/9996230">AS7341-DLGM</a></td>
+<td><a class="glightbox" href="../Images/AMS_AS7341-DLGM.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="AMS" src="../Images/AMS_AS7341-DLGM.jpg" /></a></td>
+<td>- 11-Channel full spectrum analysis <br> - Configurable flicker detection</td>
+<td>- Very complex configuration <br> - Expensive</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice: Texas Instruments OPT4060DTSR</strong><br />
+The TI OPT4060DTSR will allow for a high degree of accuracy and flexibility at a reasonable price. The sensor provides 4 channels for red, green, blue, and white light as well as an auto ranging feature. Power requirements are low, requiring only 1.6V to 3.3V to function with an operating current of 24 μA. The small form factor (2.1mm x 1.9mm x 0.6mm), low PPU ($2.88/Unit) and configurable I2C allow for multiple sensors to be implemented with ease if required.</p>
+<h1 id="voltage-regulator">Voltage Regulator</h1>
+<table>
+<thead>
+<tr>
+<th>Manufacturer</th>
+<th>Part Number</th>
+<th>Image</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Analog Devices Inc.</td>
+<td><a href="https://www.digikey.com/en/products/detail/analog-devices-inc/ADP2302ARDZ-3-3-R7/2606526">ADP2302ARDZ-3.3-R7</a></td>
+<td><a class="glightbox" href="../Images/AD_ADP2302ARDZ.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="AD" src="../Images/AD_ADP2302ARDZ.jpg" /></a></td>
+<td>- Wide operating voltage range <br> - High current limit</td>
+<td>- Low efficiency at 5Vin/3.3Vout <br> - Expensive</td>
+</tr>
+<tr>
+<td>Texas Instruments</td>
+<td><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2674MX-3-3-NOPB/366902">LM2674MX-3.3/NOPB</a></td>
+<td><a class="glightbox" href="../Images/TI_LM2674MX.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TI" src="../Images/TI_LM2674MX.jpg" /></a></td>
+<td>- Wide operating voltage range <br> - High efficiency at 5Vin/3.3Vout</td>
+<td>- Low current limit <br> - Moderately expensive</td>
+</tr>
+<tr>
+<td>Microchip Technology</td>
+<td><a href="https://www.digikey.com/en/products/detail/microchip-technology/MIC4680-3-3YM-TR/1030018">MIC4680-3.3YM-TR</a></td>
+<td><a class="glightbox" href="../Images/MT_MIC4680.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MC" src="../Images/MT_MIC4680.jpg" /></a></td>
+<td>- Wide operating voltage range <br> - Moderate current lmit <br> - Affordable</td>
+<td>- Low efficiency at 5Vin/3.3Vout</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice: Texas Instruments LM2674MX-3.3</strong><br />
+The TI LM2674MX-3.3 provides an efficient and stable 3.3V output with a wide range of voltage inputs. The datasheet claims it is accurate within ± 0.05V and has a possible energy efficiency of 90%. While the maximum current limit is relatively low, the overall goal of the sensor subsystem is to provide accurate measurements at low power and is unlikely to exceed 500 mA.</p>
+<h1 id="microcontroller">Microcontroller</h1>
+<p>The sensor subsystem is required to analyze and record information about the color of marbles before they are sent to the sorting actuator subsystem. This is done by measuring the amount of red, green, and blue light reflected off the surface of the marble to return 3 8-bit values to compare with an RGB sensor, and a white illuminator LED to ensure accurate measurements. Once these values have been found, they are sent to the actuator, HMI, and internet communication subsystem via UART. The sensor subsystem is required to run off of a 3.3V power supply under 500 mA.</p>
+<p>The Microchip <a href="https://www.microchip.com/en-us/product/pic18f27q84">PIC18F27Q84</a> is the best fit for the sensor subsystem. The chip is capable of operating at the designated 3.3 volts, and provides users with 1x I2C module as well as 5X UART modules. The sensor subsystem is relatively simple, and is only required to illuminate a ball on a track with a white LED and record R/G/B information in order to determine where the ball is sent. A single I2C module should be enough to control the TI OPT4060, and only one or two pins are required to control the LEDs. Multiple UART modules may be required to communicate with the HMI, sorting actuator, return actuator, and internet communication subsystems developed by the rest of team 201. The image below shows the selected I2C module, 3x UART modules, and 2x LED GPIO pins selected in the pin manager of the MCC Melody workspace.  </p>
+<p><a class="glightbox" href="../Images/Build%20Confirmation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="WORKSPACE" src="../Images/Build%20Confirmation.png" /></a></p>
 
 
 
@@ -554,7 +612,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Component%20Selection/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Component Selection" rel="prev">
+          <a href="../Block%20Diagram/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Block Diagram" rel="prev">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -564,20 +622,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Component Selection
+                Block Diagram
               </div>
             </div>
           </a>
         
         
           
-          <a href="../subfolder/" class="md-footer__link md-footer__link--next" aria-label="Next: This is the index to a subfolder" rel="next">
+          <a href="../charts/" class="md-footer__link md-footer__link--next" aria-label="Next: Charts" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                This is the index to a subfolder
+                Charts
               </div>
             </div>
             <div class="md-footer__button md-icon">
