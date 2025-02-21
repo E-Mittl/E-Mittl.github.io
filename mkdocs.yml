@@ -27,6 +27,13 @@ theme:
 #    - navigation.expand
 #    - navigation.instant # doesn't work that well
 
+nav:
+ - Homepage: index.md
+ - Block Diagram: Block Diagram.md
+ - Component Selection: Component Selection.md
+ - Schematic: Schematic.md
+ - Appendix: Appendix.md
+
 markdown_extensions:
   - attr_list #add attributes using curly brackets to images, see https://squidfunk.github.io/mkdocs-material/reference/images/
   - md_in_html # see https://squidfunk.github.io/mkdocs-material/reference/images/
