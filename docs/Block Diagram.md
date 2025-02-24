@@ -2,4 +2,4 @@
 title: Block Diagram
 ---
 
-![Block Diagram](../static/BlockDiagram.png)
+![Block Diagram](images/diagrams/BLOCK%20DIAGRAM.svg)
