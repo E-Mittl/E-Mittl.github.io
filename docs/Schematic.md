@@ -3,10 +3,10 @@ Title: RGB Sensor Schematic
 ---
 
 # RGB Sensor Schematic
-![Schematic](images/diagrams/EGR314%20-%20INDIVIDUAL%20SCHEMATIC%20-%20EMITTLEM.png)
+![Schematic](../images/diagrams/EGR314%20-%20INDIVIDUAL%20SCHEMATIC%20-%20EMITTLEM.png)
 
 # Power Budget
-![Budget](images/diagrams/Power%20Budget.png) 
+![Budget](../images/diagrams/Power%20Budget.png) 
 
 # Files
  - Cadence OrCAD Schematic: [link](ZIP/TEAM201%20-%20RGB%20SENSOR%20-%20EMITTLEM.zip)  

@@ -6,7 +6,7 @@ theme:
   name: material
   custom_dir: custom_theme/
   palette:
-    primary: teal
+    primary: custom
     accent: green
   font:
     text: Roboto
@@ -28,11 +28,11 @@ theme:
 #    - navigation.instant # doesn't work that well
 
 nav:
- - Homepage: index.md
- - Block Diagram: Block Diagram.md
- - Component Selection: Component Selection.md
- - Schematic: Schematic.md
- - Appendix: Appendix.md
+ - Homepage: 'index.md'
+ - Block Diagram: 'Block Diagram.md'
+ - Component Selection: 'Component Selection.md'
+ - Schematic: 'Schematic.md'
+ - Appendix: 'Appendix.md'
 
 markdown_extensions:
   - attr_list #add attributes using curly brackets to images, see https://squidfunk.github.io/mkdocs-material/reference/images/
