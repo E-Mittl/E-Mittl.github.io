@@ -12,13 +12,13 @@
       
       
       
-        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/Component%20Selection/">
+        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/BOM/">
       
       
-        <link rel="prev" href="../Block%20Diagram/">
+        <link rel="prev" href="../Schematic/">
       
       
-        <link rel="next" href="../Schematic/">
+        <link rel="next" href="../Appendix/">
       
       
       <link rel="icon" href="../static/logo.png">
@@ -29,7 +29,7 @@
 
     
       
-        <title>Component Selection - E-Mittl EGR314</title>
+        <title>Bill of Materials - E-Mittl EGR314</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#rgb-sensor" class="md-skip">
+        <a href="#simplified-version-of-bom" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Component Selection
+              Bill of Materials
             
           </span>
         </div>
@@ -234,11 +234,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../Component%20Selection/" class="md-tabs__link">
         
   
     
@@ -270,9 +268,11 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../BOM/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
     
@@ -393,18 +393,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Component%20Selection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -413,7 +404,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -441,9 +431,18 @@
       
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../BOM/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -452,6 +451,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -508,7 +508,7 @@
                   
 
   
-    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/Component Selection.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/BOM.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -516,125 +516,11 @@
   
 
 
-<h1 id="rgb-sensor">RGB Sensor:</h1>
-<table>
-<thead>
-<tr>
-<th>Manufacturer</th>
-<th>Part Number</th>
-<th>Image</th>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Texas Instruments</td>
-<td><a href="https://www.digikey.com/en/products/detail/texas-instruments/OPT4060DTSR/22116843">OPT4060DTSR</a></td>
-<td><a class="glightbox" href="../Images/sens/TI_OPT4060DTSR.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TI" src="../Images/sens/TI_OPT4060DTSR.jpg" /></a></td>
-<td>- Configurable I2C Address <br> - Small form factor <br> - Low operating power</td>
-<td>- Complex configuration <br></td>
-</tr>
-<tr>
-<td>Vishay Semiconductor</td>
-<td><a href="https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/VEML3328/10673129">VEML3328</a></td>
-<td><a class="glightbox" href="../Images/sens/VS_VEML3328.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="VS" src="../Images/sens/VS_VEML3328.jpg" /></a></td>
-<td>- Simple configuration <br> - 4-Channels (RGBC) <br> - Integrated signal conditioning</td>
-<td>- Fixed I2C address</td>
-</tr>
-<tr>
-<td>ams-OSRAM USA INC.</td>
-<td><a href="https://www.digikey.com/en/products/detail/ams-osram-usa-inc/AS7341-DLGM/9996230">AS7341-DLGM</a></td>
-<td><a class="glightbox" href="../Images/sens/AMS_AS7341-DLGM.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="AMS" src="../Images/sens/AMS_AS7341-DLGM.jpg" /></a></td>
-<td>- 11-Channel full spectrum analysis <br> - Configurable flicker detection</td>
-<td>- Very complex configuration <br> - Expensive</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Choice: Texas Instruments OPT4060DTSR</strong><br />
-The TI OPT4060DTSR will allow for a high degree of accuracy and flexibility at a reasonable price. The sensor provides 4 channels for red, green, blue, and white light as well as an auto ranging feature. Power requirements are low, requiring only 1.6V to 3.3V to function with an operating current of 24 μA. The small form factor (2.1mm x 1.9mm x 0.6mm), low PPU ($2.88/Unit) and configurable I2C allow for multiple sensors to be implemented with ease if required.  </p>
-<h1 id="voltage-regulator">Voltage Regulator</h1>
-<table>
-<thead>
-<tr>
-<th>Manufacturer</th>
-<th>Part Number</th>
-<th>Image</th>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Analog Devices Inc.</td>
-<td><a href="https://www.digikey.com/en/products/detail/analog-devices-inc/ADP2302ARDZ-3-3-R7/2606526">ADP2302ARDZ-3.3-R7</a></td>
-<td><a class="glightbox" href="../Images/reg/AD_ADP2302ARDZ.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="AD" src="../Images/reg/AD_ADP2302ARDZ.jpg" /></a></td>
-<td>- Wide operating voltage range <br> - High current limit</td>
-<td>- Low efficiency at 5Vin/3.3Vout <br> - Expensive</td>
-</tr>
-<tr>
-<td>Texas Instruments</td>
-<td><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2674MX-3-3-NOPB/366902">LM2674MX-3.3/NOPB</a></td>
-<td><a class="glightbox" href="../Images/reg/TI_LM2674MX.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TI" src="../Images/reg/TI_LM2674MX.jpg" /></a></td>
-<td>- Wide operating voltage range <br> - High efficiency at 5Vin/3.3Vout</td>
-<td>- Low current limit <br> - Moderately expensive</td>
-</tr>
-<tr>
-<td>STMicroelectronics</td>
-<td><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/L6981C33DR/16841475">L6981C33DR</a></td>
-<td><a class="glightbox" href="../Images/reg/STM_L6981C33DR.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="STM" src="../Images/reg/STM_L6981C33DR.jpg" /></a></td>
-<td>- Wide operating voltage range <br> - Moderate current lmit <br> - Affordable - High Efficiency</td>
-<td>- Complex configuration</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Choice: STMicroelectronics L6981C33DR</strong><br />
-The STM L6981C33DR provides an efficient and stable 3.3V output with a wide range of voltage inputs. This regulator is highly efficient, up to an estimated 95%. Finally, the 1.5A max output current allows the entire subsystem to operate safely.  </p>
-<h1 id="illuminator-led">Illuminator LED</h1>
-<table>
-<thead>
-<tr>
-<th>Manufacturer</th>
-<th>Part Number</th>
-<th>Image</th>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Luminus Devices Inc.</td>
-<td><a href="https://www.digikey.com/en/products/detail/luminus-devices-inc/SST-20-W35H-B120-J4351/15903671">SST-20-W35H-B120-J4351</a></td>
-<td><a class="glightbox" href="../Images/led/ID_SST20_WLED.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ID" src="../Images/led/ID_SST20_WLED.jpg" /></a></td>
-<td>- High CRI <br> - Low forward voltage <br> - balanced temperature <br> - High lumens</td>
-<td>- High test current <br> - Expensive <br> - Low lm/W rating <br> - Expensive</td>
-</tr>
-<tr>
-<td>XINGLIGHT</td>
-<td><a href="https://www.digikey.com/en/products/detail/xinglight/XL-3020UWC-A/25673208">XL-3020UWC-A</a></td>
-<td><a class="glightbox" href="../Images/led/XL_3020UWC.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="XL" src="../Images/led/XL_3020UWC.jpg" /></a></td>
-<td>- Low test current <br> - Compact</td>
-<td>- High forward voltage <br> - Low lumens <br> - No CRI listed <br> - Unbalanced temperature</td>
-</tr>
-<tr>
-<td>Cree LED</td>
-<td><a href="https://www.digikey.com/en/products/detail/cree-JB2835BWT-G-U40EA0000-N000P001/21531775">JB2835BWT-G-U40EA0000-N000P001</a></td>
-<td><a class="glightbox" href="../Images/led/CL_JB2835BWT.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="CL" src="../Images/led/CL_JB2835BWT.jpg" /></a></td>
-<td>- Very low forward voltage <br> - Low test current <br> - Affordable <br> -  Balanced temperature <br> - Very high lm/W rating</td>
-<td>- Relatively low CRI <br></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Choice: Cree LED JB2835BWT-G-U40EA0000-N000P001</strong><br />
-Illumination and color balance are critical for accurate measurements. The Cree J Series 2835 Pro9 white LED is capable of meeting these requirements with minimal power consumption. This model mas a typical forward voltage of 2.67V allowing it to be powered directly by the microcontroller. While the maximum current rating is 480 mA, the LED is capable of producing 28-31 lumens at only 55 mA. Finally, the rated temperature of 4000K and 90 CRI ensures a balanced light output for accurate measurements.  </p>
-<h1 id="rg-led">R/G LED</h1>
-<p>Debugging LEDs are required for ease of use and troubleshooting, both in the development phase and for the end user. These components are not as critical as the power regulator, sensor, or illumination LED, their power concumption must still be taken into consideration. The <strong>Lite-On <a href="https://www.digikey.com/en/products/detail/liteon/LTST-C150KRKT/386761">LTST-C150KRKT</a> and <a href="https://www.digikey.com/en/products/detail/liteon/LTST-C150KGKT/365085?s=N4IgTCBcDaIDIBUDKCC0BhAjAVgAwGkBzfBEAXQF8g">LTST-C150KGKT</a></strong> have been selected due to their low power consumption and affordable price. Both models have a forward voltage of 2V and test current of 20 mA, allowing them to be powered directly by the microcontroller.  </p>
-<h1 id="microcontroller">Microcontroller</h1>
-<p>The sensor subsystem is required to analyze and record information about the color of marbles before they are sent to the sorting actuator subsystem. This is done by measuring the amount of red, green, and blue light reflected off the surface of the marble to return 3 8-bit values to compare with an RGB sensor, and a white illuminator LED to ensure accurate measurements. Once these values have been found, they are sent to the actuator, HMI, and internet communication subsystem via UART. This subsystem is to run off of a 3.3V power supply under 1.5A.</p>
-<p>Microchips <a href="https://www.microchip.com/en-us/product/pic18f27q84">PIC18F27Q84</a> (QFN28) microcontroller is the best fit for the sensor subsystem. The chip is capable of operating at the designated 3.3 volts, and provides users with 1x I2C module as well as 5X UART modules. The sensor subsystem is relatively simple, and is only required to illuminate a ball on a track with a white LED and record R/G/B information in order to determine where the ball is sent. A single I2C module should be enough to control the TI OPT4060, and only one or two pins are required to control the LEDs. Multiple UART modules may be required to communicate with the HMI, sorting actuator, return actuator, and internet communication subsystems developed by the rest of team 201. The image below shows the selected I2C module, 3x UART modules, and 2x LED GPIO pins selected in the pin manager of the MCC Melody workspace.  </p>
-<p><a class="glightbox" href="../Images/diagrams/QFN28.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PACKAGE" src="../Images/diagrams/QFN28.png" /></a><br />
-<a class="glightbox" href="../Images/diagrams/PIN%20SELECTION.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PINS" src="../Images/diagrams/PIN%20SELECTION.png" /></a></p>
-<hr />
+<h1 id="simplified-version-of-bom">Simplified Version of BOM</h1>
+<p><a class="glightbox" href="../Images/diagrams/BOMSHORT.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="BOM" src="../Images/diagrams/BOMSHORT.png" /></a></p>
+<h1 id="files">Files</h1>
+<p>Complete BOM Excel File : <a href="../Images/BOM.xlsx">link</a><br />
+Complete BOM PDF: <a href="../PDF/BOM.pdf">link</a></p>
 
 
 
@@ -662,7 +548,7 @@ Illumination and color balance are critical for accurate measurements. The Cree 
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Block%20Diagram/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Block Diagram" rel="prev">
+          <a href="../Schematic/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Schematic" rel="prev">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -672,20 +558,20 @@ Illumination and color balance are critical for accurate measurements. The Cree 
                 Previous
               </span>
               <div class="md-ellipsis">
-                Block Diagram
+                Schematic
               </div>
             </div>
           </a>
         
         
           
-          <a href="../Schematic/" class="md-footer__link md-footer__link--next" aria-label="Next: Schematic" rel="next">
+          <a href="../Appendix/" class="md-footer__link md-footer__link--next" aria-label="Next: Appendix" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Schematic
+                Appendix
               </div>
             </div>
             <div class="md-footer__button md-icon">
