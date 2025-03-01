@@ -32,6 +32,7 @@ nav:
  - Block Diagram: 'Block Diagram.md'
  - Component Selection: 'Component Selection.md'
  - Schematic: 'Schematic.md'
+ - BOM: 'BOM.md'
  - Appendix: 'Appendix.md'
 
 markdown_extensions:
