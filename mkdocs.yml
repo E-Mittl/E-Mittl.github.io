@@ -33,6 +33,7 @@ nav:
  - Component Selection: 'Component Selection.md'
  - Schematic: 'Schematic.md'
  - BOM: 'BOM.md'
+ - API: 'API.md'
  - Appendix: 'Appendix.md'
 
 markdown_extensions:

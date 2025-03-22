@@ -12,3 +12,4 @@ This is E. Mittleman's website for the Spring 2025 semester of EGR314.
 | Component Selection | [link](https://e-mittl.github.io/Component%20Selection/) | 
 | Individual Schematic | [link](https://e-mittl.github.io/Schematic/) | 
 | Bill of Materials | [link](https://e-mittl.github.io/BOM/) |
+| API | [link](https://e-mittl.github.io/API/)
