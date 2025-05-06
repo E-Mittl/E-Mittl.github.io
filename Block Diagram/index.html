@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#design-choices" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -313,6 +318,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Resources/" class="md-tabs__link">
+        
+  
+    
+  
+  Resources
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -395,6 +417,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Block Diagram
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -404,6 +437,30 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design-choices" class="md-nav__link">
+    Design Choices
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -504,6 +561,25 @@
   
 
     
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -521,6 +597,21 @@
   
   
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design-choices" class="md-nav__link">
+    Design Choices
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -545,7 +636,9 @@
 
   <h1>Block Diagram</h1>
 
-<p><a class="glightbox" href="../Images/diagrams/BLOCK%20DIAGRAM.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Block Diagram" src="../Images/diagrams/BLOCK%20DIAGRAM.svg" /></a></p>
+<p><a class="glightbox" href="../Images/diagrams/EGR314%20-%20Individual%20Block%20Diagram.drawio.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Block Diagram" src="../Images/diagrams/EGR314%20-%20Individual%20Block%20Diagram.drawio.png" /></a></p>
+<h2 id="design-choices">Design Choices</h2>
+<p>The sensor subsystem is designed to be as simple as possible for easy, accurate, and efficient operation. The block diagram above helped to ensure the dsign meets these requirements, as well as project requirements. It shows how the PIC communicates with other subsystems over UART, as well as how it uses I2C to communicate with the Microchip SNAP programmer and OPT4048 RGB sensor. Pin allocation ensures there is enough I/O for the red and green debugging LEDs, white illumination LED, and debugging pushbutton.</p>
 
 
 

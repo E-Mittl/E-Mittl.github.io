@@ -318,6 +318,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Resources/" class="md-tabs__link">
+        
+  
+    
+  
+  Resources
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -418,8 +435,17 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Component Selection
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -430,6 +456,79 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rgb-sensor" class="md-nav__link">
+    RGB Sensor:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voltage-regulator" class="md-nav__link">
+    Voltage Regulator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#illuminator-led" class="md-nav__link">
+    Illuminator LED
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rg-led" class="md-nav__link">
+    R/G LED
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selected-components" class="md-nav__link">
+    Selected Components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microcontroller" class="md-nav__link">
+    Microcontroller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-process" class="md-nav__link">
+    Design Process
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-budget" class="md-nav__link">
+    Power Budget
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -511,6 +610,25 @@
   
 
     
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -528,8 +646,70 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rgb-sensor" class="md-nav__link">
+    RGB Sensor:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voltage-regulator" class="md-nav__link">
+    Voltage Regulator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#illuminator-led" class="md-nav__link">
+    Illuminator LED
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rg-led" class="md-nav__link">
+    R/G LED
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selected-components" class="md-nav__link">
+    Selected Components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microcontroller" class="md-nav__link">
+    Microcontroller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-process" class="md-nav__link">
+    Design Process
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-budget" class="md-nav__link">
+    Power Budget
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -552,7 +732,9 @@
   
 
 
-<h1 id="rgb-sensor">RGB Sensor:</h1>
+  <h1>Component Selection</h1>
+
+<h2 id="rgb-sensor">RGB Sensor:</h2>
 <table>
 <thead>
 <tr>
@@ -585,11 +767,18 @@
 <td>- 11-Channel full spectrum analysis <br> - Configurable flicker detection</td>
 <td>- Very complex configuration <br> - Expensive</td>
 </tr>
+<tr>
+<td>Texas Instruments</td>
+<td><a href="https://www.digikey.com/en/products/detail/texas-instruments/OPT4060DTSR/22116843">OPT4048DTSR</a></td>
+<td><a class="glightbox" href="../Images/sens/TI_OPT4060DTSR.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TI" src="../Images/sens/TI_OPT4060DTSR.jpg" /></a></td>
+<td>- Configurable I2C Address <br> - Small form factor <br> - Low operating power <br> - High operating speed</td>
+<td>- Complex configuration <br> - Sensitive to environmental changes</td>
+</tr>
 </tbody>
 </table>
-<p><strong>Choice: Texas Instruments OPT4060DTSR</strong><br />
-The TI OPT4060DTSR will allow for a high degree of accuracy and flexibility at a reasonable price. The sensor provides 4 channels for red, green, blue, and white light as well as an auto ranging feature. Power requirements are low, requiring only 1.6V to 3.3V to function with an operating current of 24 μA. The small form factor (2.1mm x 1.9mm x 0.6mm), low PPU ($2.88/Unit) and configurable I2C allow for multiple sensors to be implemented with ease if required.  </p>
-<h1 id="voltage-regulator">Voltage Regulator</h1>
+<p><strong>Choice: Texas Instruments OPT4048DTSR</strong><br />
+The TI OPT4048DTSR is the next generation of the OPT4060DTSR, and will allow for a high degree of accuracy and flexibility at a reasonable price. The sensor provides 4 channels for red, green, blue, and white light as well as an auto ranging feature. Power requirements are low, requiring only 1.6V to 3.3V to function with an operating current of 24 μA. The small form factor (2.1mm x 1.9mm x 0.6mm), low PPU ($2.88/Unit) and configurable I2C allow for multiple sensors to be implemented with ease if required.  </p>
+<h2 id="voltage-regulator">Voltage Regulator</h2>
 <table>
 <thead>
 <tr>
@@ -626,7 +815,7 @@ The TI OPT4060DTSR will allow for a high degree of accuracy and flexibility at a
 </table>
 <p><strong>Choice: STMicroelectronics L6981C33DR</strong><br />
 The STM L6981C33DR provides an efficient and stable 3.3V output with a wide range of voltage inputs. This regulator is highly efficient, up to an estimated 95%. Finally, the 1.5A max output current allows the entire subsystem to operate safely.  </p>
-<h1 id="illuminator-led">Illuminator LED</h1>
+<h2 id="illuminator-led">Illuminator LED</h2>
 <table>
 <thead>
 <tr>
@@ -659,18 +848,57 @@ The STM L6981C33DR provides an efficient and stable 3.3V output with a wide rang
 <td>- Very low forward voltage <br> - Low test current <br> - Affordable <br> -  Balanced temperature <br> - Very high lm/W rating</td>
 <td>- Relatively low CRI <br></td>
 </tr>
+<tr>
+<td>Samsung Semiconductor, Inc.</td>
+<td><a href="https://www.digikey.com/en/products/detail/samsung-semiconductor-inc/SPMWHT541MP5WAR0S5/5959262">SPMWHT541MP5WAR0S5</a></td>
+<td><a class="glightbox" href="../Images/led/SSI_SPMWHT541.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SS" src="../Images/led/SSI_SPMWHT541.jpg" /></a></td>
+<td>- Affordable <br> - Very high lm/W rating <br> - Exposed leads <br> - Low profile</td>
+<td>- Relatively low CRI <br> - High forward voltage</td>
+</tr>
 </tbody>
 </table>
-<p><strong>Choice: Cree LED JB2835BWT-G-U40EA0000-N000P001</strong><br />
-Illumination and color balance are critical for accurate measurements. The Cree J Series 2835 Pro9 white LED is capable of meeting these requirements with minimal power consumption. This model mas a typical forward voltage of 2.67V allowing it to be powered directly by the microcontroller. While the maximum current rating is 480 mA, the LED is capable of producing 28-31 lumens at only 55 mA. Finally, the rated temperature of 4000K and 90 CRI ensures a balanced light output for accurate measurements.  </p>
-<h1 id="rg-led">R/G LED</h1>
+<p><strong>Choice: Samsung Semiconductor SPMWHT541MP5WAR0S5</strong><br />
+Illumination and consistency are critical for accurate measurements. The Samsung SPMWHT541MP5WAR0S5 is capable of meeting these requirements with minimal power consumption. While the maximum current rating is 180 mA, the LED is capable of producing 35-37 lumens at only 65 mA. The rated temperature of 5000K and 80 CRI ensures a balanced light output for accurate measurements.  </p>
+<h2 id="rg-led">R/G LED</h2>
 <p>Debugging LEDs are required for ease of use and troubleshooting, both in the development phase and for the end user. These components are not as critical as the power regulator, sensor, or illumination LED, their power concumption must still be taken into consideration. The <strong>Lite-On <a href="https://www.digikey.com/en/products/detail/liteon/LTST-C150KRKT/386761">LTST-C150KRKT</a> and <a href="https://www.digikey.com/en/products/detail/liteon/LTST-C150KGKT/365085?s=N4IgTCBcDaIDIBUDKCC0BhAjAVgAwGkBzfBEAXQF8g">LTST-C150KGKT</a></strong> have been selected due to their low power consumption and affordable price. Both models have a forward voltage of 2V and test current of 20 mA, allowing them to be powered directly by the microcontroller.  </p>
-<h1 id="microcontroller">Microcontroller</h1>
+<h2 id="selected-components">Selected Components</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microchip PIC18F27Q84</td>
+<td><a class="glightbox" href="../Images/PIC18F27Q84.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MC" src="../Images/PIC18F27Q84.png" /></a></td>
+</tr>
+<tr>
+<td>TI OPT4048DTSR</td>
+<td><a class="glightbox" href="../Images/sens/TI_OPT4048DTSR.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TI" src="../Images/sens/TI_OPT4048DTSR.jpg" /></a></td>
+</tr>
+<tr>
+<td>STMicroelectronics L6981C33DR</td>
+<td><a class="glightbox" href="../Images/reg/STM_L6981C33DR.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="STM" src="../Images/reg/STM_L6981C33DR.jpg" /></a></td>
+</tr>
+<tr>
+<td>Samsung Semiconductor SPMWHT541MP5WAR0S5</td>
+<td><a class="glightbox" href="../Images/led/SSI_SPMWHT541.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SS" src="../Images/led/SSI_SPMWHT541.jpg" /></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="microcontroller">Microcontroller</h2>
 <p>The sensor subsystem is required to analyze and record information about the color of marbles before they are sent to the sorting actuator subsystem. This is done by measuring the amount of red, green, and blue light reflected off the surface of the marble to return 3 8-bit values to compare with an RGB sensor, and a white illuminator LED to ensure accurate measurements. Once these values have been found, they are sent to the actuator, HMI, and internet communication subsystem via UART. This subsystem is to run off of a 3.3V power supply under 1.5A.</p>
-<p>Microchips <a href="https://www.microchip.com/en-us/product/pic18f27q84">PIC18F27Q84</a> (QFN28) microcontroller is the best fit for the sensor subsystem. The chip is capable of operating at the designated 3.3 volts, and provides users with 1x I2C module as well as 5X UART modules. The sensor subsystem is relatively simple, and is only required to illuminate a ball on a track with a white LED and record R/G/B information in order to determine where the ball is sent. A single I2C module should be enough to control the TI OPT4060, and only one or two pins are required to control the LEDs. Multiple UART modules may be required to communicate with the HMI, sorting actuator, return actuator, and internet communication subsystems developed by the rest of team 201. The image below shows the selected I2C module, 3x UART modules, and 2x LED GPIO pins selected in the pin manager of the MCC Melody workspace.  </p>
-<p><a class="glightbox" href="../Images/diagrams/QFN28.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PACKAGE" src="../Images/diagrams/QFN28.png" /></a><br />
+<p>Microchips <a href="https://www.microchip.com/en-us/product/pic18f27q84">PIC18F27Q84</a> (SOIC28) microcontroller is the best fit for the sensor subsystem. The chip is capable of operating at the designated 3.3 volts, and provides users with 1x I2C module as well as 5X UART modules. The sensor subsystem is relatively simple, and is only required to illuminate a ball on a track with a white LED and record R/G/B information in order to determine where the ball is sent. A single I2C module should be enough to control the TI OPT4060, and only one or two pins are required to control the LEDs. Multiple UART modules may be required to communicate with the HMI, sorting actuator, return actuator, and internet communication subsystems developed by the rest of team 201. The image below shows the selected I2C module, 3x UART modules, and 2x LED GPIO pins selected in the pin manager of the MCC Melody workspace.  </p>
+<p><a class="glightbox" href="../Images/diagrams/PDIP28.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PACKAGE" height="600" src="../Images/diagrams/PDIP28.png" style="display: block; margin: 0 auto" width="800" /></a>
 <a class="glightbox" href="../Images/diagrams/PIN%20SELECTION.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PINS" src="../Images/diagrams/PIN%20SELECTION.png" /></a></p>
-<hr />
+<h2 id="design-process">Design Process</h2>
+<p>The sensor subsystem is designed for quick, accurate, low power operation. The L6981C33DR regulator is capable of efficiently converting the teams 12V power input to a safe 3.3V operating output. Quick operation is determined by the PIC18F27Q84 microcontroller which easily handles UART communication and message handling between sensors as well as I2C communication with the OPT4048 RGB sensor. Both Lite-On LEDs used for debugging display quick sensor results in the final product, allowing the team to determine if an orange, blue, or green ball had been detected without the use of external tools for exact values.</p>
+<h2 id="power-budget">Power Budget</h2>
+<p><a class="glightbox" href="../Images/diagrams/Power%20Budget.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Budget" src="../Images/diagrams/Power%20Budget.png" /></a>
+Power Budget Spreadsheet: <a href="../Images/Sensor%20Power%20Budget.xlsx">link</a></p>
+<p>The power budget is critical in ensuring component compatibility and safe operation. The sensor is designed to function with a current draw below 500 mA, including a 25% safety margin. It was quicly determined that the microcontroller and sensor would draw aproximately 360 mA at peak operation. While this falls within the initially established maximum limit, the total power consumption including the safety margin would result in 450 mA current draw, resulting in only 50 mA being available in case of emergency. This led to the selection of the L6981C33DR to ensure there would be no power issues during testing. </p>
 
 
 

@@ -318,6 +318,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Resources/" class="md-tabs__link">
+        
+  
+    
+  
+  Resources
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -437,8 +454,17 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Schematic
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -449,6 +475,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rgb-sensor-schematic" class="md-nav__link">
+    RGB Sensor Schematic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-needs-and-decisions" class="md-nav__link">
+    User Needs and Decisions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-20" class="md-nav__link">
+    Version 2.0
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -511,6 +582,25 @@
   
 
     
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -528,8 +618,42 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rgb-sensor-schematic" class="md-nav__link">
+    RGB Sensor Schematic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-needs-and-decisions" class="md-nav__link">
+    User Needs and Decisions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-20" class="md-nav__link">
+    Version 2.0
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -552,16 +676,26 @@
   
 
 
-<h1 id="rgb-sensor-schematic">RGB Sensor Schematic</h1>
+  <h1>Schematic</h1>
+
+<h2 id="rgb-sensor-schematic">RGB Sensor Schematic</h2>
 <p><a class="glightbox" href="../Images/diagrams/RGB%20SCHEMATIC.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Schematic" src="../Images/diagrams/RGB%20SCHEMATIC.png" /></a></p>
-<h1 id="power-budget">Power Budget</h1>
-<p><a class="glightbox" href="../Images/diagrams/Power%20Budget.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Budget" src="../Images/diagrams/Power%20Budget.png" /></a> </p>
-<h1 id="files">Files</h1>
+<h2 id="files">Files</h2>
 <ul>
-<li>Cadence OrCAD Schematic: <a href="../ZIP/TEAM201%20-%20RGB%20SENSOR%20-%20EMITTLEM.zip">link</a>  </li>
+<li>Cadence OrCAD Schematic and PCB: <a href="../ZIP/TEAM201%20-%20RGB%20SENSOR%20-%20EMITTLEM.zip">link</a>  </li>
 <li>RGB Sensor Schematic PDF: <a href="../PDF/TEAM%20201%20-%20RGB%20SENSOR%20-%20EMITTLEM.pdf">link</a></li>
-<li>Power Budget Spreadsheet: <a href="../Images/Sensor%20Power%20Budget.xlsx">link</a></li>
+<li>Gerber Files: <a href="../ZIP/EricMittleman201.zip">link</a></li>
 </ul>
+<p>## PCB
+ <strong>Top View</strong>
+ <a class="glightbox" href="../Images/diagrams/PCBTOP.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PCBTOP" src="../Images/diagrams/PCBTOP.png" /></a></p>
+<p><strong>Bottom View</strong>
+ <a class="glightbox" href="../Images/diagrams/PCBBOTTOM.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PCBBOTTOM" src="../Images/diagrams/PCBBOTTOM.png" /></a></p>
+<h2 id="user-needs-and-decisions">User Needs and Decisions</h2>
+<p>The schematic and PCB design demonstrate how user needs and project requirements are met. Each function of the sensor is given it's own spot on the board for organiation and ease of operation. The power regulation system is located at the top of the board, and is connected to wall power or team power through one of two selectable headers - one for wall power via barrel jack, and one for team power via ribon cable connected to pin 1 of each 2x4 header. The red and green LEDs are placed on the bottom of the PCB with the debugging pushbutton for easy viewing and opearation. Two 2x4 header pins allow for power to be transfered to each team system (Vin on pin 1, GND on pin 8), and UART communication is passed through pin 3 of these headers - later corrected to pin 2 through jumpers. Additional I/O is provided for users utilizing pins A0:A5 of the microcontroller. Three I/0 pins are connected to male headers, and 3 are connected to female headers. MOSFETS are used to isolate the 3.3V power from the microcontroller while operating LEDs, as well as reducing power required to control them Finally, the white illumination LED and OPT4048 sensor are placed on the back of the board allowing them to face the inside of an enclosure for accurate measurement while the user interface remains available outside.</p>
+<h2 id="version-20">Version 2.0</h2>
+<p>If I were able to create a second version of the sensor, I would focus on improving the ribbon cable headers, pysical mounting options, and fixed connections. Due to a misunderstanding in ribbon cable standards, header positioning standards, and physical dimensions, the 2x4 headers used to communicate with and provide power to each board caused multiple problems. To start, the ribbon cable pins are mirrored from the header pins - the top and bottom rows are swapped As a result, the headers needed to be mounted upside down with the pins  on the back of the board, rather than both on front as I originally intended. Dimensioning issues were also a problem as the housing on the headers overlapped and needed to be modified to fit properly. Finally, I misunderstood how header pins were oriented, and placed a trace from the microcontroller to pin 3 of the headers, thinking that the pins were numbered length-wise with two rows of four pins, rather than as four rows of two pins. All of these are fixable and would only require a small increase in the size of the board and minimal trace routing fixes. The board also features no way to mount with screws or clips, and parts sat closer to the edge of the board than I expected resulting in a clunky mounting system in the final project. A second version should include holes for mounting, or at least clear corners to attach to. Finally, I made a critical mistake in the schematic design, and connected pins 2:3 of the voltage regulator by accident. This resulted in incorrect operation and the small size of the traces, components, and pins made fixing the errors difficult.</p>
+<p>Additional but non-critical fixes could be focused on the UART and I2C traces. While there were no communication issues, the I2C lines run in a straight line parallel to each other for a significant distance, and some crosstalk was present in the signal. These traces were only placed 5 mils apart, and could stand to be placed 15 mils apart instead. UART lines, on the other hand, could be placed closer together in a more uniform manner, though the signals did not appear to have any distortion of noise during operation. </p>
 
 
 
