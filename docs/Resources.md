@@ -2,7 +2,7 @@
 title: Resources
 ---
 
-The code and MPLabX resources for this project can be found as a .zip file [here](ZIP/Individual_Subsystem_Verification.zip)
+The code and MPLabX resources for this project can be found as a .zip file [here](ZIP/Individual_Subsystem_Verification.zip).
 
 ## Code
 ```
