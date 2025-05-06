@@ -34,7 +34,6 @@ nav:
  - Schematic: 'Schematic.md'
  - BOM: 'BOM.md'
  - API: 'API.md'
- - Appendix: 'Appendix.md'
  - Resources: 'Resources.md'
 
 markdown_extensions:
