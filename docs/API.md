@@ -2,6 +2,8 @@
 title: API
 ---
 
+For a more detailed breakdown of message structure, data types, and sequencing, please view the [API page on the Team 201 website](https://asu-egr314-2025-s-201.github.io/04-Block%20Diagram%2C%20Process%20Diagram%2C%20and%20Message%20Structure/).
+
 ## Team ID
 | Member Name | Subsystem       | ID (char) |
 |-------------|--------------------|--------|
