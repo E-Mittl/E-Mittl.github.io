@@ -35,6 +35,7 @@ nav:
  - BOM: 'BOM.md'
  - API: 'API.md'
  - Appendix: 'Appendix.md'
+ - Resources: 'Resources.md'
 
 markdown_extensions:
   - attr_list #add attributes using curly brackets to images, see https://squidfunk.github.io/mkdocs-material/reference/images/

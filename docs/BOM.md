@@ -9,5 +9,4 @@ title: Bill of Materials
 
 # Files
 Complete BOM Excel File : [link](Images/BOM.xlsx)  
-Complete BOM PDF: [link](PDF/BOM.pdf)  
-Datasheets: [link](ZIP/datasheets.zip)
+Complete BOM PDF: [link](PDF/BOM.pdf)
